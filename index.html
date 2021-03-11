@@ -78,6 +78,7 @@
          <div class="header-search d-flex flex-wrap align-items-center position-fixed w-100">
             <span class="search-close-btn position-absolute"><i class="fas fa-times"></i></span>
             <form class="w-100 position-relative">
+
                <button type="submit"><i class="flaticon-magnifying-glass"></i></button>
                <input type="text" placeholder="Search">
             </form>
@@ -179,10 +180,10 @@
                                  <span class="d-block">Request a Callback</span>
                                  <h2 class="mb-0">From a Consultant</h2>
                               </div>
-                              <form class="w-100">
-                                 <input class="brd-rd5" type="text" placeholder="Name">
-                                 <input class="brd-rd5" type="text" placeholder="Phone Number">
-                                 <button class="thm-btn bg-black brd-rd5 position-relative overflow-hidden">Request</button>
+                              <form id='gform' class="w-100" method="POST" action="https://script.google.com/macros/s/AKfycbyi_wzxDYNcaQ9OooxjE1C-hAUGWnU2GKF5i0vOhMZgVcH_PdeFfBq95w9gb5rxzcsJ1A/exec">
+                                 <input class="brd-rd5" type="text" name="name" placeholder="Name">
+                                 <input class="brd-rd5" type="text" name="phone" placeholder="Phone Number">
+                                 <button type="submit" id="submit" class="thm-btn bg-black brd-rd5 position-relative overflow-hidden">Request</button>
                               </form>
                            </div>
                         </div>
